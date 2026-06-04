@@ -16,7 +16,7 @@ if not GOOGLE_API_KEY:
     st.stop()
 
 genai.configure(api_key=GOOGLE_API_KEY)
-model = genai.GenerativeModel("gemini-2.0-flash")
+model = genai.GenerativeModel("gemini-1.5-flash")
 
 # ==========================================
 # Load Knowledge Base
@@ -218,8 +218,8 @@ The AI service is temporarily rate-limited.
 
 Please try again in a few moments.
 """
-else:
-    response = """
+            else:
+                response = """
 I encountered a temporary issue while processing the request.
 Please try again.
 """
