@@ -1,0 +1,466 @@
+Vishal's - GITHUB PROJECT KNOWLEDGE BASE
+
+============================================================
+CANDIDATE OVERVIEW
+==================
+
+Name: Vishal M
+
+Current Status:
+Completed Master of Computer Applications (Artificial Intelligence and Machine Learning) from JAIN (Deemed-to-be University), Bangalore in 2026.
+
+Career Goal:
+Seeking opportunities as an AI Engineer, Machine Learning Engineer, Generative AI Engineer, or Applied AI Developer.
+
+Core Expertise:
+
+* Machine Learning
+* Deep Learning
+* Generative AI
+* NLP
+* Computer Vision
+* FastAPI
+* Flask
+* LangChain
+* TensorFlow
+* PyTorch
+* Docker
+* PostgreSQL
+* Supabase
+
+============================================================
+PROJECT: NEURAL ATTACK RECONSTRUCTOR (NAR)
+==========================================
+
+Repository:
+neural-attack-reconstructor
+
+Project Type:
+Cybersecurity + Generative AI + Deep Learning
+
+Purpose:
+Neural Attack Reconstructor is an enterprise-grade cybersecurity forensic system designed to reconstruct missing, corrupted, or incomplete network attack logs using a hybrid VAE-GAN architecture.
+
+Problem Solved:
+Traditional forensic analysis becomes difficult when attack logs are partially deleted, corrupted, or unavailable. This project helps reconstruct attack patterns and improve forensic investigations.
+
+Tech Stack:
+
+* Python
+* PyTorch
+* FastAPI
+* Docker
+* VAE (Variational Autoencoder)
+* GAN (Generative Adversarial Network)
+
+Architecture:
+
+1. Input network traffic data.
+2. Encoder converts traffic into latent representation.
+3. Decoder reconstructs missing traffic.
+4. GAN discriminator improves realism.
+5. Forensic validator scores reconstruction quality.
+6. FastAPI exposes prediction endpoints.
+7. Docker enables deployment.
+
+Why VAE-GAN?
+A VAE learns compressed attack representations while a GAN improves reconstruction realism. Combining both provides better forensic reconstruction quality than using either architecture independently.
+
+Why FastAPI?
+FastAPI was chosen because:
+
+* Better performance than Flask
+* Automatic API documentation
+* Async support
+* Production-ready deployment
+
+Challenges:
+
+* GAN instability during training
+* Maintaining reconstruction fidelity
+* Handling noisy cybersecurity data
+* Balancing reconstruction quality and inference speed
+
+Tradeoffs:
+Pros:
+
+* High-quality reconstruction
+* Better forensic analysis
+
+Cons:
+
+* More complex training
+* Higher computational requirements
+
+What Would Be Improved?
+
+* Transformer-based reconstruction
+* Explainable AI dashboards
+* SIEM integration
+* Real-world cybersecurity datasets
+
+Recent Updates:
+
+* Added FastAPI deployment
+* Added Docker support
+* Added forensic validation layer
+* Added latent-space analysis
+
+Most Impressive Aspect:
+Combines Generative AI with cybersecurity for attack reconstruction.
+
+============================================================
+PROJECT: AI TEXT HUMANIZER
+==========================
+
+Repository:
+textify-humanize-app
+
+Project Type:
+Generative AI + NLP
+
+Purpose:
+Transforms AI-generated content into natural, human-like text while preserving meaning and readability.
+
+Problem Solved:
+AI-generated text often sounds robotic and repetitive. The platform improves naturalness and readability.
+
+Tech Stack:
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* Supabase
+* GPT-4o
+* OpenAI API
+
+Major Features:
+
+* AI text humanization
+* Tone customization
+* Plagiarism detection
+* Analytics dashboard
+* Authentication system
+
+Why React?
+Provides reusable UI components and scalable frontend architecture.
+
+Why Supabase?
+Supabase offers:
+
+* Authentication
+* PostgreSQL database
+* Backend services
+* Rapid development
+
+Why GPT-4o?
+GPT-4o provides stronger language understanding and more natural rewriting compared to smaller language models.
+
+Challenges:
+
+* Preserving original meaning
+* Maintaining human-like writing
+* Reducing repetitive output
+* Managing API latency
+
+Tradeoffs:
+Pros:
+
+* High quality output
+* Better readability
+
+Cons:
+
+* Higher API costs
+* External model dependency
+
+What Would Be Improved?
+
+* Multi-language support
+* User writing profiles
+* Advanced tone controls
+* Document-level rewriting
+
+Recent Updates:
+
+* Added tone customization
+* Added plagiarism detection
+* Added analytics dashboard
+* Added Supabase authentication
+
+Why Not FastAPI?
+The project focused on rapid prototyping and frontend-heavy development. Additional backend complexity was unnecessary at this stage.
+
+Most Impressive Aspect:
+Combines multiple AI services to improve generated content quality.
+
+============================================================
+PROJECT: STOCK PRICE ANALYZER
+=============================
+
+Repository:
+stock_prize_analyzer
+
+Project Type:
+Machine Learning + Time Series Forecasting
+
+Purpose:
+Predict future stock price trends using Long Short-Term Memory (LSTM) neural networks.
+
+Problem Solved:
+Provides data-driven stock forecasting based on historical market data.
+
+Tech Stack:
+
+* Python
+* TensorFlow
+* LSTM
+* Pandas
+* NumPy
+* Matplotlib
+* yfinance
+
+Architecture:
+
+1. Download historical stock data.
+2. Normalize data using MinMaxScaler.
+3. Train LSTM network.
+4. Predict future prices.
+5. Visualize actual vs predicted results.
+
+Why LSTM?
+LSTM is specifically designed for sequential and time-series data and can learn long-term dependencies better than traditional neural networks.
+
+Model Details:
+
+* 3 LSTM Layers
+* 100 units each
+* 20% dropout
+* Dense layer
+* Adam optimizer
+* Mean Squared Error loss
+
+Challenges:
+
+* Market volatility
+* Noisy financial data
+* Overfitting risk
+
+Tradeoffs:
+Pros:
+
+* Strong sequence modeling
+* Good forecasting capability
+
+Cons:
+
+* Sensitive to market events
+* Cannot predict unexpected news
+
+What Would Be Improved?
+
+* Transformer forecasting
+* News sentiment analysis
+* Real-time prediction pipelines
+* Portfolio recommendations
+
+Recent Updates:
+
+* Added validation split
+* Added early stopping
+* Added visualization dashboards
+
+Why Not Transformers?
+LSTM provided a simpler and computationally efficient baseline for the project scope.
+
+Most Impressive Aspect:
+Complete end-to-end time-series forecasting pipeline.
+
+============================================================
+PROJECT: FACE AND EYE DETECTION
+===============================
+
+Repository:
+face-eye-detection
+
+Project Type:
+Computer Vision
+
+Purpose:
+Real-time face and eye detection system for security and human-computer interaction applications.
+
+Tech Stack:
+
+* Python
+* OpenCV
+* Haar Cascades
+* Caffe Models
+
+Features:
+
+* Face detection
+* Eye detection
+* Real-time inference
+* 25+ FPS performance
+
+Why Haar Cascades?
+Chosen because:
+
+* Lightweight
+* Fast
+* Low hardware requirements
+* Suitable for real-time applications
+
+Challenges:
+
+* Lighting variations
+* Occlusions
+* Different camera qualities
+
+Tradeoffs:
+Pros:
+
+* Fast execution
+* Low resource consumption
+
+Cons:
+
+* Lower accuracy than modern deep learning detectors
+
+What Would Be Improved?
+
+* YOLOv8 integration
+* CNN-based eye-state detection
+* Driver drowsiness monitoring
+* Face recognition
+
+Recent Updates:
+
+* Cascade optimization
+* Image preprocessing improvements
+* FPS optimization
+
+Most Impressive Aspect:
+Maintains real-time performance while performing multiple detections.
+
+============================================================
+PROJECT: STUDENTS PORTAL
+========================
+
+Repository:
+Students-Portal
+
+Project Type:
+Full Stack Web Application
+
+Purpose:
+Academic management portal for students and administrators.
+
+Tech Stack:
+
+* Python
+* Flask
+* SQLite
+* HTML
+* CSS
+* JavaScript
+
+Features:
+
+* Student portal
+* Admin portal
+* Authentication
+* Database integration
+
+Architecture:
+Student Side:
+
+* Login
+* Dashboard
+* Academic information
+
+Admin Side:
+
+* Management interface
+* Database administration
+* User management
+
+Why Flask?
+Flask was selected because:
+
+* Easy to learn
+* Lightweight
+* Rapid development
+
+Why SQLite?
+SQLite was chosen because:
+
+* Easy setup
+* No separate database server
+* Suitable for educational projects
+
+Challenges:
+
+* Authentication
+* Database consistency
+* User role separation
+
+Tradeoffs:
+Pros:
+
+* Simple deployment
+* Fast development
+
+Cons:
+
+* Limited scalability
+* Not ideal for large enterprise systems
+
+What Would Be Improved?
+
+* PostgreSQL migration
+* Cloud deployment
+* RBAC implementation
+* Analytics dashboard
+
+Recent Updates:
+
+* Separate admin/student portals
+* Database automation
+* Login management
+
+Most Impressive Aspect:
+Complete academic portal with independent student and admin systems.
+
+============================================================
+COMMON INTERVIEW QUESTIONS
+==========================
+
+Why Should We Hire Vishal?
+
+Vishal combines academic knowledge, hands-on AI experience, and real-world project development. He has built projects across Generative AI, Machine Learning, Deep Learning, Computer Vision, and Full Stack Development. His work demonstrates end-to-end ownership from model development to deployment using FastAPI, Flask, Docker, TensorFlow, PyTorch, and modern AI tools.
+
+Which Project Is Technically Strongest?
+
+Neural Attack Reconstructor is the most technically advanced project because it combines:
+
+* Generative AI
+* Cybersecurity
+* Deep Learning
+* FastAPI deployment
+* Docker containerization
+* Forensic validation
+
+Why Is He Suitable For An AI Engineer Role?
+
+* Strong AI/ML foundation
+* Experience with real-world AI projects
+* Knowledge of Deep Learning architectures
+* Generative AI experience
+* Research publications
+* Practical deployment experience
+
+Current Employment Status:
+
+After completing MCA in AI & ML in 2026, Vishal is actively seeking opportunities in Artificial Intelligence, Machine Learning, and Generative AI.
