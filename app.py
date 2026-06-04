@@ -9,8 +9,7 @@ import os
 # ==========================================
 
 load_dotenv()
-
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY") or st.secrets["GOOGLE_API_KEY"]
 
 if not GOOGLE_API_KEY:
     st.error("GOOGLE_API_KEY not found in .env file")
