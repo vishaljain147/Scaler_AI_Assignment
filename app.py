@@ -16,8 +16,7 @@ if not GOOGLE_API_KEY:
     st.stop()
 
 genai.configure(api_key=GOOGLE_API_KEY)
-
-model = genai.GenerativeModel("gemini-2.5-flash")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 # ==========================================
 # Load Knowledge Base
@@ -213,11 +212,16 @@ User Question:
 
         except Exception as e:
 
-            response = f"""
-An error occurred while generating a response.
+            if "429" in str(e):
+                response = """
+The AI service is temporarily rate-limited.
 
-Error:
-{str(e)}
+Please try again in a few moments.
+"""
+else:
+    response = """
+I encountered a temporary issue while processing the request.
+Please try again.
 """
 
     st.session_state.messages.append(
